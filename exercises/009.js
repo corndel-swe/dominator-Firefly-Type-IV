@@ -21,7 +21,6 @@ export const rockPaperScissors =
       return 'tie';
     } else {
 
-      console.log(options[choice1])
       return `player${options[choice1] === choice2 ? 1 : 2}`
     }
   }
