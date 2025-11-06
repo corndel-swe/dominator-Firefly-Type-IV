@@ -12,7 +12,7 @@ export const rockPaperScissors =
     // TODO: if player1 wins, return 'player1'
     // TODO: if player2 wins, return 'player2'
     // TODO: if tie, return 'tie'
-    const options = {
+    const rules = {
       'rock' : 'scissors',
       'scissors' : 'paper',
       'paper' : 'rock'
@@ -21,6 +21,6 @@ export const rockPaperScissors =
       return 'tie';
     } else {
 
-      return `player${options[choice1] === choice2 ? 1 : 2}`
+      return `player${rules[choice1] === choice2 ? 1 : 2}`
     }
   }
